@@ -3,7 +3,7 @@ package sec02.exam01_arraylist;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayLstExample {
+public class ArrayListExample {
 
 	public static void main(String[] args) {
 
@@ -26,7 +26,19 @@ public class ArrayLstExample {
 		System.out.println("2: " + skill); //2: Database
 		System.out.println();
 		
-		for(int i =0; i <size; i++) {
+		//List인터페이스를 구현한 ArrayList컬렉션 객체의 데이터를 모두 순서대로 출력
+		for(int i =0; i <list.size(); i++) {
+			String str = list.get(i);
+			System.out.println(i + ":" + str);
+		}
+		
+		System.out.println();
+		
+		list.remove(2); //인덱스 - Database 삭제
+		list.remove(2); // Servlet/JSP 삭제(Database가 삭제되어 3번이던 데이터가 2번으로)
+		list.remove("MyBatis"); //값 MyBatis 삭제
+		System.out.println("값 삭제");
+		for(int i =0; i <list.size(); i++) {
 			String str = list.get(i);
 			System.out.println(i + ":" + str);
 		}
