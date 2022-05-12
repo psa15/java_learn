@@ -1,6 +1,5 @@
 package sec02.exam03_reader_read;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 

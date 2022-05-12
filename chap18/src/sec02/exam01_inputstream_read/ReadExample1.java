@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.security.spec.InvalidParameterSpecException;
 
+//바이트 기반의 파일입력스트림 예제 : FileInputStream 클래스
 public class ReadExample1 {
 
 	public static void main(String[] args) throws Exception {
