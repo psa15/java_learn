@@ -6,6 +6,10 @@ import java.io.Serializable;
 public class ClassA implements Serializable {
 	//에러가 없음 - 재정의할 추상메소드 X
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//직렬화 대상
 	int field1;
 	ClassB field2 = new ClassB();
